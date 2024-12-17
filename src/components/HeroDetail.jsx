@@ -36,21 +36,21 @@ export default function HeroDetail() {
         {/* INFORMACION */}
         <div className="w-full p-6 md-w-2/3">
           {/* NOMBRE GENERAL */}
-          <h1 className="mb-4 text-3xl font-bold">{hero.name}</h1>
+          <h1 className="mb-4 text-3xl font-bold text-center text-white">{hero.name}</h1>
           {/* POWERSTATS */}
           <section className="p-4 m-4 border rounded">
-            <h2 className="mb-2 text-xl font-semibold">Powerstats</h2>
+            <h2 className="mb-2 text-xl font-semibold text-center text-white">Powerstats</h2>
             <ul className="grid grid-cols-2 gap-2 mb-4">
               {Object.entries(hero.powerstats).map(([key, value]) => (
-                <li key={key} className="text-gray-700 capitalize">
+                <li key={key} className="text-gray-300 capitalize">
                   <strong>{key}: &nbsp;</strong> {value}
                 </li>
               ))}
             </ul>
           </section>
           {/* BIOGRAPHY */}
-          <section className="p-4 m-4 border rounded">
-            <h2 className="mb-2 text-xl font-semibold">Biography</h2>
+          <section className="p-4 m-4 text-white border rounded">
+            <h2 className="mb-2 text-xl font-semibold text-center text-white">Biography</h2>
             <p>
               <strong>Nombre completo:&nbsp;</strong>{" "}
               {hero.biography["full-name"]}

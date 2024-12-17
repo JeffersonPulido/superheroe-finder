@@ -9,7 +9,7 @@ const HeroCard = React.memo(({ hero }) => (
         alt={hero.name}
         className="object-cover w-full h-56"
       />
-      <h2 className="mt-2 text-xl">{hero.name}</h2>
+      <h2 className="mt-2 text-xl text-center text-white">{hero.name}</h2>
     </div>
   </Link>
 ));
